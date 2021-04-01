@@ -1,0 +1,7 @@
+<h1>Project List</h1>
+<div>All you need is containers!</div>
+<ul>
+  <% @project_list.each do |item| %>
+    <li><%= item.title %><a href="/projects/<%= item.id %>">Run</a></li>
+  <% end %>
+</ul>
